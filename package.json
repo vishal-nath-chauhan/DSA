@@ -1,0 +1,22 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Bubble_sort.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishal-nath-chauhan/DSA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishal-nath-chauhan/DSA/issues"
+  },
+  "homepage": "https://github.com/vishal-nath-chauhan/DSA#readme",
+  "dependencies": {
+    "jsdom": "^18.1.0"
+  }
+}

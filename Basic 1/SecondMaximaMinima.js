@@ -1,26 +1,28 @@
-function findNumber(arr) {
-  let min = arr[0];
-  let max = arr[1];
-  arr.map((element) => {
-    if (element > max) {
-      max = element;
+function main(arr){
+  let min,secmin,max,secmax;
+  min=arr[0];
+  secmin=arr[0];
+  max=arr[0];
+  secmax=arr[0];
+  arr.forEach(item=>{
+    if(item<min){
+     secmin=min;
+     min=item 
     }
-    if (element < min) {
-      min = element;
+    if(item<secmin && item != min){
+      secmin=item
     }
-  });
-  console.log({ min, max });
+    if(item>max){
+      secmax=max;
+      max=item
+    }
+    if(item>secmax && item != max){
+      secmax=item
+    }
+  })
+  console.log({secmin,secmax})
 
-  let secMax = max;
-  let secMin = max;
-  arr.map((element) => {
-    if (max - element < secMax && element !== max) {
-      secMax = max - element;
-    }
-    if (element + min < secMin && element != min) {
-      secMin = element + min;
-    }
-  });
-  console.log({ secMax, secMin });
+
 }
-findNumber([1, 2, 3, 4, 5, 5, 6, 6, 7]);
+main([3,7,2,-1,4,9])
+main([12,13,1,10,34,1])
