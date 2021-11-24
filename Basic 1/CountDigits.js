@@ -2,9 +2,10 @@ function countDigits(number) {
   // let num=String(number)
   // return num.length
   let count = 0;
-  while (number >= 1) {
-    number = number / 10;
+  while (number > 0) {
+    number = parseInt(number / 10);
     count++;
+    console.log({count,number})
   }
   return count;
 }

@@ -1,12 +1,13 @@
 function  reverseDigit(number) {
     let output=[]
     let remainder;
-    while(number>=1)
+    while(number>0)
     {
         // number=number/10
         remainder=number%10;
         console.log(String(remainder))
-        number=parseInt(number/10)
+        number=parseInt(number/10);
+        console.log({number,remainder})
 
 
     }
